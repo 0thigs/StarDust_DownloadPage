@@ -34,12 +34,24 @@ header {
   transform: scale(1.05);
   animation: changeColor 0.5s ease-in-out forwards;
 }
+.text_header:active {
+  transform: scale(0.95);
+}
 
 @keyframes changeColor {
-  from {
-    color: #fff; 
+  0% {
+    color: #ffffff;
   }
-  to {
-    color: yellow; 
+  25% {
+    color: #fdea7a;
+  }
+  50% {
+    color: #fafa3b;
+  }
+  75% {
+    color: #fae527;
+  }
+  100% {
+    color: #fae527;
   }
 }
