@@ -13,7 +13,7 @@ body {
   background-size: cover;
 }
 
-header {
+.header_container {
   width: 100vw;
   height: 5rem;
   display: flex;
@@ -31,27 +31,66 @@ header {
 }
 
 .text_header:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   animation: changeColor 0.5s ease-in-out forwards;
 }
 .text_header:active {
   transform: scale(0.95);
 }
 
+.title {
+  margin-top: 50px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 70px;
+  color: #f5c730;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.link_container {
+  margin-top: 50px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rocket_link {
+  border: none;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rocket_img {
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s;
+}
+.rocket_img:hover {
+  transform: scale(1.1);
+}
+
+
 @keyframes changeColor {
   0% {
     color: #ffffff;
   }
-  25% {
-    color: #fdea7a;
-  }
-  50% {
-    color: #fafa3b;
-  }
-  75% {
-    color: #fae527;
-  }
-  100% {
-    color: #fae527;
+  100% { 
+    color: #f5c730;
   }
 }
