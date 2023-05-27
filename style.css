@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+body {
+  background-image: url('/Assets/FundoImg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.text_header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.text_header:hover {
+  transform: scale(1.05);
+  animation: changeColor 0.5s ease-in-out forwards;
+}
+
+@keyframes changeColor {
+  from {
+    color: #fff; 
+  }
+  to {
+    color: yellow; 
+  }
+}
