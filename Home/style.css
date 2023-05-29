@@ -8,9 +8,9 @@
 }
 
 body {
-  background-image: url('/Assets/FundoImg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(to bottom, #141416, #151518, #15151a, #16161b, #17161d, #191821, #1b1926, #1d1b2a, #211e32, #25213a, #292343, #2e264b);
+  height: 100vh;
+  overflow: hidden;
 }
 
 .header_container {
