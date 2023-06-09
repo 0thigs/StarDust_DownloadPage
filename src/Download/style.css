@@ -103,11 +103,21 @@ body {
   border: none;
   transition: all 1s;
   -webkit-box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.26);
--moz-box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.26);
-box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.26);
+  -moz-box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.26);
+  box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.26);
 }
 .download_button:hover {
   transform: scale(1.1);
+}
+.download_button:active {
+  transform: scale(1.0);
+  background-color: #016334;
+}
+
+.donwload_img {
+  width: 25px;
+  height: 25px;
+  opacity: 90%;
 }
 
 @keyframes changeColor {
