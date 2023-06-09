@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #141416, #151518, #15151a, #16161b, #17161d, #191821, #1b1926, #1d1b2a, #211e32, #25213a, #292343, #2e264b);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header_container {
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.text_header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.text_header:hover {
+  transform: scale(1.03);
+  animation: changeColor 0.5s ease-in-out forwards;
+}
+.text_header:active {
+  transform: scale(0.95);
+}
+
+.title {
+  margin-top: 50px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 70px;
+  color: #f5c730;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.link_container {
+  margin-top: 50px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rocket_link {
+  border: none;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rocket_img {
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s;
+}
+.rocket_img:hover {
+  transform: scale(1.1);
+}
+
+.download_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.download_button {
+  width: 150px;
+  height: 50px;
+  border-radius: 100px;
+  color: black;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: #04d671;
+  cursor: pointer;
+  border: none;
+  transition: all 1s;
+  -webkit-box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.26);
+-moz-box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.26);
+box-shadow: 10px 10px 15px 4px rgba(0,0,0,0.26);
+}
+.download_button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes changeColor {
+  0% {
+    color: #ffffff;
+  }
+  100% { 
+    color: #f5c730;
+  }
+}
