@@ -86,9 +86,11 @@ body {
 }
 
 .download_container {
+  margin-top: 50px;
+  height: 400px;
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  align-items: center;
 }
 
 .download_button {
@@ -126,5 +128,15 @@ body {
   }
   100% { 
     color: #f5c730;
+  }
+}
+
+@media (max-width: 350px) {
+  .text_header {
+    font-size: 8vmin
+  }
+
+  .title {
+    font-size: 15vmin
   }
 }

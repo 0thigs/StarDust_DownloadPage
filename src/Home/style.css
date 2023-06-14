@@ -94,3 +94,13 @@ body {
     color: #f5c730;
   }
 }
+
+@media (max-width: 350px) {
+  .text_header {
+    font-size: 8vmin
+  }
+
+  .title {
+    font-size: 15vmin
+  }
+}
